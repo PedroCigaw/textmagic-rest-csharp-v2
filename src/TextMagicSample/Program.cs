@@ -12,7 +12,7 @@ namespace ExampleApp
         private static string SMSPhoneNumber { get; } = "PhoneNumber for sms 447808451451";
         private static string ApiKey { get; } = "Your api key";
         private static string UserName { get; } = "Your Username";
-        
+
 
         static void Main(string[] args)
         {
