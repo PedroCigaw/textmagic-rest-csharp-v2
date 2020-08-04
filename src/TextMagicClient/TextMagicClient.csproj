@@ -11,53 +11,25 @@ OpenAPI spec version: 2
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>TextMagicClient</RootNamespace>
     <AssemblyName>TextMagicClient</AssemblyName>
-    <AssemblyVersion>2.0.1534.0</AssemblyVersion>
-    <FileVersion>2.0.1534.0</FileVersion>
     <Product>TextMagic</Product>
     <Company>TextMagic Ltd</Company>
     <Authors>andrey.v@textmagic.biz</Authors>
     <Description>TextMagic REST API Library</Description>
     <PackageId>TextMagicClient.Core</PackageId>
     <Copyright>Copyright ©  2015 TextMagic Ltd</Copyright>
-    <PackageLicenseExpression>https://opensource.org/licenses/MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/textmagic/textmagic-rest-csharp-v2</RepositoryUrl>
-    <Version>2.0.1534</Version>
+    <Version>2.1.0</Version>
+    <AssemblyVersion>$(Version).0</AssemblyVersion>
+    <FileVersion>$(Version).0</FileVersion>
     <PackageProjectUrl>https://github.com/textmagic/textmagic-rest-csharp-v2</PackageProjectUrl>
   </PropertyGroup>
-  <!--<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>-->
-
-  <!--<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>-->
   
-<!--<ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="**\*.cs" Exclude="obj\**" />
-  </ItemGroup>-->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+  
   <ItemGroup>
     <PackageReference Include="JsonSubTypes">
       <Version>1.7.0</Version>
